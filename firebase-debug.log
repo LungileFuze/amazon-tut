@@ -1,0 +1,962 @@
+[debug] [2023-11-23T11:03:19.313Z] ----------------------------------------------------------------------
+[debug] [2023-11-23T11:03:19.317Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-11-23T11:03:19.317Z] CLI Version:   12.9.1
+[debug] [2023-11-23T11:03:19.318Z] Platform:      win32
+[debug] [2023-11-23T11:03:19.318Z] Node Version:  v18.17.1
+[debug] [2023-11-23T11:03:19.325Z] Time:          Thu Nov 23 2023 13:03:19 GMT+0200 (South Africa Standard Time)
+[debug] [2023-11-23T11:03:19.325Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-23T11:03:19.447Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-23T11:03:19.447Z] > authorizing via signed-in user (ngcobolungile94@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-11-23T11:03:19.455Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-23T11:03:19.455Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-11-23T11:03:19.480Z] [hub] writing locator at C:\Users\cupheni.ngcobo\AppData\Local\Temp\hub-clone-tutorial-56240.json
+[debug] [2023-11-23T11:03:19.501Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-23T11:03:19.502Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-23T11:03:19.502Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-11-23T11:03:19.515Z] defaultcredentials: writing to file C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json
+[debug] [2023-11-23T11:03:19.529Z] Setting GAC to C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\cupheni.ngcobo\\AppData\\Roaming\\firebase\\ngcobolungile94_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-23T11:03:19.531Z] > refreshing access token with scopes: []
+[debug] [2023-11-23T11:03:19.533Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-23T11:03:19.534Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-23T11:03:20.009Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-23T11:03:20.009Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-23T11:03:20.068Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig [none]
+[debug] [2023-11-23T11:03:20.607Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig 200
+[debug] [2023-11-23T11:03:20.607Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig {"projectId":"clone-tutorial-56240","storageBucket":"clone-tutorial-56240.appspot.com","locationId":"us-central"}
+[debug] [2023-11-23T11:03:20.689Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-11-23T11:03:20.690Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-11-23T11:03:20.690Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\cupheni.ngcobo\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\cupheni.ngcobo\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-11-23T11:03:20.904Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-11-23T11:03:20.905Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\" for Cloud Functions..."}}
+[debug] [2023-11-23T11:03:20.995Z] Validating nodejs source
+[debug] [2023-11-23T11:03:31.062Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+    at async FunctionsEmulator.connect (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:262:13)
+    at async Object.startAll (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:566:13)
+[debug] [2023-11-23T11:03:31.066Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-23T11:03:31.066Z] Building nodejs source
+[debug] [2023-11-23T11:03:31.067Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-23T11:03:31.078Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-23T11:03:31.103Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8746
+
+[debug] [2023-11-23T11:03:36.252Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-11-23T13:22:58.121Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:22:59.159Z] Validating nodejs source
+[debug] [2023-11-23T13:23:07.003Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-23T13:23:07.005Z] Building nodejs source
+[debug] [2023-11-23T13:23:07.006Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-23T13:23:07.020Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-23T13:23:07.030Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8299
+
+[debug] [2023-11-23T13:23:11.962Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-23T13:23:59.095Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:23:59.462Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:23:59.755Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:24:00.031Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:24:01.043Z] Validating nodejs source
+[debug] [2023-11-23T13:24:11.090Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-11-23T13:24:11.093Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-23T13:24:11.094Z] Building nodejs source
+[debug] [2023-11-23T13:24:11.094Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-23T13:24:11.100Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-23T13:24:11.112Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8508
+
+[debug] [2023-11-23T13:24:13.063Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-23T13:26:50.358Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:26:51.371Z] Validating nodejs source
+[debug] [2023-11-23T13:27:01.405Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-11-23T13:27:01.408Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-23T13:27:01.408Z] Building nodejs source
+[debug] [2023-11-23T13:27:01.409Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-23T13:27:01.412Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-23T13:27:01.418Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8347
+
+[debug] [2023-11-23T13:27:03.385Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-23T13:29:24.626Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:29:25.631Z] Validating nodejs source
+[debug] [2023-11-23T13:29:35.657Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-11-23T13:29:35.660Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-23T13:29:35.661Z] Building nodejs source
+[debug] [2023-11-23T13:29:35.661Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-23T13:29:35.665Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-23T13:29:35.681Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8331
+
+[debug] [2023-11-23T13:29:37.798Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-23T13:29:40.911Z] File C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-23T13:29:41.916Z] Validating nodejs source
+[debug] [2023-11-23T13:29:51.972Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-11-23T13:29:51.975Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-23T13:29:51.976Z] Building nodejs source
+[debug] [2023-11-23T13:29:51.976Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-23T13:29:51.984Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-23T13:29:52.008Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8817
+
+[debug] [2023-11-23T13:29:54.125Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-11-23T13:58:30.387Z] Received signal SIGHUP 1
+[debug] [2023-11-23T16:33:08.414Z] ----------------------------------------------------------------------
+[debug] [2023-11-23T16:33:08.416Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-11-23T16:33:08.417Z] CLI Version:   12.9.1
+[debug] [2023-11-23T16:33:08.417Z] Platform:      win32
+[debug] [2023-11-23T16:33:08.417Z] Node Version:  v18.17.1
+[debug] [2023-11-23T16:33:08.420Z] Time:          Thu Nov 23 2023 18:33:08 GMT+0200 (South Africa Standard Time)
+[debug] [2023-11-23T16:33:08.420Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-23T16:33:08.429Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-23T16:33:08.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-23T16:33:08.541Z] > authorizing via signed-in user (ngcobolungile94@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-11-23T16:33:08.552Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-23T16:33:08.552Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-tutorial-56240. This may result in unexpected behavior. 
+[debug] [2023-11-23T16:33:08.606Z] [hub] writing locator at C:\Users\cupheni.ngcobo\AppData\Local\Temp\hub-clone-tutorial-56240.json
+[debug] [2023-11-23T16:33:08.664Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-23T16:33:08.665Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-23T16:33:08.665Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-11-23T16:33:08.675Z] defaultcredentials: writing to file C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json
+[debug] [2023-11-23T16:33:08.681Z] Setting GAC to C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\cupheni.ngcobo\\AppData\\Roaming\\firebase\\ngcobolungile94_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-23T16:33:08.683Z] > refreshing access token with scopes: []
+[debug] [2023-11-23T16:33:08.684Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-23T16:33:08.684Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-23T16:33:09.144Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-23T16:33:09.144Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-23T16:33:09.182Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig [none]
+[debug] [2023-11-23T16:33:09.431Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-11-23T16:33:09.431Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-11-23T16:33:09.767Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig 200
+[debug] [2023-11-23T16:33:09.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig {"projectId":"clone-tutorial-56240","storageBucket":"clone-tutorial-56240.appspot.com","locationId":"us-central"}
+[debug] [2023-11-23T16:33:09.814Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-11-23T16:33:09.814Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-11-23T16:33:09.814Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\cupheni.ngcobo\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\cupheni.ngcobo\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-11-23T16:33:10.031Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-11-23T16:33:10.032Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\" for Cloud Functions..."}}
+[debug] [2023-11-23T16:33:10.110Z] Validating nodejs source
+[debug] [2023-11-23T16:33:14.029Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-23T16:33:14.030Z] Building nodejs source
+[debug] [2023-11-23T16:33:14.030Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-23T16:33:14.035Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-23T16:33:14.044Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8891
+
+[debug] [2023-11-23T16:33:18.849Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-11-23T16:47:08.605Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:47:08.604Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:47:08.605Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:47:08.604Z"],"workRunningCount":1}
+[debug] [2023-11-23T16:47:08.606Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-23T16:47:08.610Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-23T16:47:08.611Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-23T16:47:08.640Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-11-23T16:47:08.641Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-11-23T16:47:19.175Z] [runtime-status] [34568] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-11-23T16:47:19.187Z] [runtime-status] [34568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-23T16:47:19.190Z] [runtime-status] [34568] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-11-23T16:47:19.198Z] [runtime-status] [34568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-23T16:47:20.150Z] [runtime-status] [34568] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-11-23T16:47:20.150Z] [runtime-status] [34568] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-11-23T16:47:20.158Z] [runtime-status] [34568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-23T16:47:20.167Z] [runtime-status] [34568] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-11-23T16:47:20.202Z] [runtime-status] [34568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-23T16:47:20.205Z] [runtime-status] [34568] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-11-23T16:47:20.898Z] [runtime-status] [34568] Functions runtime initialized. {"cwd":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2023-11-23T16:47:20.898Z] [runtime-status] [34568] Listening to port: \\?\pipe\fire_emu_7a6ea0b3d5ddee55 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [34568] Listening to port: \\\\?\\pipe\\fire_emu_7a6ea0b3d5ddee55"}}
+[debug] [2023-11-23T16:47:20.911Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:47:20.912Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-23T16:47:20.913Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY"}}
+[debug] [2023-11-23T16:47:20.924Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 10.6531ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 10.6531ms"}}
+[debug] [2023-11-23T16:47:20.925Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:47:20.925Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-23T16:47:20.925Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-23T16:47:20.925Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:47:20.927Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:47:20.927Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:47:20.927Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:47:20.927Z"],"workRunningCount":1}
+[debug] [2023-11-23T16:47:20.927Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-23T16:47:20.931Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-23T16:47:20.931Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-23T16:47:20.932Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-23T16:47:20.933Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY"}}
+[debug] [2023-11-23T16:47:20.938Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.4463ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.4463ms"}}
+[debug] [2023-11-23T16:47:20.939Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:47:20.940Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-23T16:47:20.941Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-23T16:47:20.941Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:48:15.169Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:48:15.168Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:48:15.169Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:48:15.168Z"],"workRunningCount":1}
+[debug] [2023-11-23T16:48:15.169Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-23T16:48:15.173Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-23T16:48:15.174Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-23T16:48:15.174Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-23T16:48:15.175Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY"}}
+[debug] [2023-11-23T16:48:15.181Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.8095ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.8095ms"}}
+[debug] [2023-11-23T16:48:15.183Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:48:15.183Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-23T16:48:15.184Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-23T16:48:15.184Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:48:15.185Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:48:15.185Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:48:15.185Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:48:15.185Z"],"workRunningCount":1}
+[debug] [2023-11-23T16:48:15.185Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-23T16:48:15.194Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-23T16:48:15.194Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-23T16:48:15.194Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-23T16:48:15.196Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY"}}
+[debug] [2023-11-23T16:48:15.207Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 11.0035ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 11.0035ms"}}
+[debug] [2023-11-23T16:48:15.217Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:48:15.217Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-23T16:48:15.218Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-23T16:48:15.218Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:50:00.944Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:50:00.944Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:50:00.945Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:50:00.944Z"],"workRunningCount":1}
+[debug] [2023-11-23T16:50:00.945Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-23T16:50:00.971Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-23T16:50:00.972Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-23T16:50:00.972Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-23T16:50:00.974Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY"}}
+[debug] [2023-11-23T16:50:00.980Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.4754ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.4754ms"}}
+[debug] [2023-11-23T16:50:00.981Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:50:00.981Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-23T16:50:00.981Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-23T16:50:00.981Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:50:00.982Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:50:00.982Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:50:00.982Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:50:00.982Z"],"workRunningCount":1}
+[debug] [2023-11-23T16:50:00.982Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-23T16:50:00.987Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-23T16:50:00.987Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-23T16:50:00.999Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-23T16:50:01.000Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY"}}
+[debug] [2023-11-23T16:50:01.016Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 16.9858ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 16.9858ms"}}
+[debug] [2023-11-23T16:50:01.018Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:50:01.018Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-23T16:50:01.018Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-23T16:50:01.018Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:51:12.799Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:51:12.799Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:51:12.799Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-23T16:51:12.799Z"],"workRunningCount":1}
+[debug] [2023-11-23T16:51:12.799Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-23T16:51:12.802Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-23T16:51:12.802Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-23T16:51:12.803Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-23T16:51:12.803Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: BUSY"}}
+[debug] [2023-11-23T16:51:12.808Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.0057ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.0057ms"}}
+[debug] [2023-11-23T16:51:12.810Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: IDLE"}}
+[debug] [2023-11-23T16:51:12.810Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-23T16:51:12.810Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-23T16:51:12.811Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-23T16:52:37.384Z] [worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-50f6f3fb-2822-405c-bad2-b38ed26c8d29]: exited"}}
+[debug] [2023-11-27T09:11:39.132Z] ----------------------------------------------------------------------
+[debug] [2023-11-27T09:11:39.133Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-11-27T09:11:39.134Z] CLI Version:   12.9.1
+[debug] [2023-11-27T09:11:39.134Z] Platform:      win32
+[debug] [2023-11-27T09:11:39.134Z] Node Version:  v18.17.1
+[debug] [2023-11-27T09:11:39.138Z] Time:          Mon Nov 27 2023 11:11:39 GMT+0200 (South Africa Standard Time)
+[debug] [2023-11-27T09:11:39.139Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-27T09:11:39.147Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-27T09:11:39.249Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-27T09:11:39.249Z] > authorizing via signed-in user (ngcobolungile94@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-11-27T09:11:39.258Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-27T09:11:39.258Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-tutorial-56240. This may result in unexpected behavior. 
+[debug] [2023-11-27T09:11:39.289Z] [hub] writing locator at C:\Users\cupheni.ngcobo\AppData\Local\Temp\hub-clone-tutorial-56240.json
+[debug] [2023-11-27T09:11:39.315Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-27T09:11:39.316Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-27T09:11:39.316Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-11-27T09:11:39.328Z] defaultcredentials: writing to file C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json
+[debug] [2023-11-27T09:11:39.345Z] Setting GAC to C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\cupheni.ngcobo\\AppData\\Roaming\\firebase\\ngcobolungile94_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-27T09:11:39.347Z] > refreshing access token with scopes: []
+[debug] [2023-11-27T09:11:39.348Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-27T09:11:39.349Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-27T09:11:39.771Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-27T09:11:39.771Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-27T09:11:39.836Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig [none]
+[debug] [2023-11-27T09:11:40.113Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-11-27T09:11:40.113Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-11-27T09:11:40.405Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig 200
+[debug] [2023-11-27T09:11:40.405Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig {"projectId":"clone-tutorial-56240","storageBucket":"clone-tutorial-56240.appspot.com","locationId":"us-central"}
+[debug] [2023-11-27T09:11:40.467Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-11-27T09:11:40.467Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-11-27T09:11:40.467Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\cupheni.ngcobo\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\cupheni.ngcobo\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-11-27T09:11:40.693Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\" for Cloud Functions..."}}
+[debug] [2023-11-27T09:11:40.788Z] Validating nodejs source
+[debug] [2023-11-27T09:11:46.007Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-27T09:11:46.008Z] Building nodejs source
+[debug] [2023-11-27T09:11:46.008Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-27T09:11:46.013Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-27T09:11:46.019Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8263
+
+[debug] [2023-11-27T09:11:51.622Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-11-27T09:12:49.305Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:12:49.305Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:12:49.306Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:12:49.305Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:12:49.308Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:12:49.315Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:12:49.316Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:12:49.355Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-11-27T09:12:49.357Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-11-27T09:13:00.212Z] [runtime-status] [8596] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-11-27T09:13:00.228Z] [runtime-status] [8596] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T09:13:00.231Z] [runtime-status] [8596] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-11-27T09:13:00.243Z] [runtime-status] [8596] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T09:13:01.816Z] [runtime-status] [8596] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-11-27T09:13:01.816Z] [runtime-status] [8596] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-11-27T09:13:01.824Z] [runtime-status] [8596] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T09:13:01.835Z] [runtime-status] [8596] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-11-27T09:13:01.881Z] [runtime-status] [8596] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T09:13:01.884Z] [runtime-status] [8596] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-11-27T09:13:03.184Z] [runtime-status] [8596] Functions runtime initialized. {"cwd":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2023-11-27T09:13:03.185Z] [runtime-status] [8596] Listening to port: \\?\pipe\fire_emu_380a947d5ad7b9c2 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [8596] Listening to port: \\\\?\\pipe\\fire_emu_380a947d5ad7b9c2"}}
+[debug] [2023-11-27T09:13:03.215Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:13:03.215Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:13:03.217Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:13:03.237Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 21.2919ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 21.2919ms"}}
+[debug] [2023-11-27T09:13:03.241Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:13:03.241Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:13:03.242Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:13:03.243Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:13:03.246Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:13:03.246Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:13:03.246Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:13:03.246Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:13:03.247Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:13:03.254Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:13:03.255Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:13:03.256Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:13:03.258Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:13:03.270Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 12.9979ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 12.9979ms"}}
+[debug] [2023-11-27T09:13:03.273Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:13:03.273Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:13:03.274Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:13:03.274Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:13:58.880Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:13:58.880Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:13:58.881Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:13:58.880Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:13:58.881Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:13:58.888Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:13:58.889Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:13:58.889Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:13:58.890Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:13:58.897Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 7.4734ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 7.4734ms"}}
+[debug] [2023-11-27T09:13:58.899Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:13:58.899Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:13:58.899Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:13:58.899Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:14:34.180Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:14:34.179Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:14:34.180Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:14:34.179Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:14:34.180Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:14:34.187Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:14:34.188Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:14:34.188Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:14:34.190Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:14:34.199Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 9.8152ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 9.8152ms"}}
+[debug] [2023-11-27T09:14:34.201Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:14:34.202Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:14:34.202Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:14:34.202Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:14:34.204Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:14:34.204Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:14:34.205Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:14:34.204Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:14:34.205Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:14:34.214Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:14:34.214Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:14:34.215Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:14:34.218Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:14:34.227Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 10.117ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 10.117ms"}}
+[debug] [2023-11-27T09:14:34.230Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:14:34.231Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:14:34.232Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:14:34.232Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:16:58.437Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:16:58.437Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:16:58.438Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:16:58.437Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:16:58.438Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:16:58.448Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:16:58.449Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:16:58.449Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:16:58.453Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:16:58.468Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 15.7014ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 15.7014ms"}}
+[debug] [2023-11-27T09:16:58.470Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:16:58.470Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:16:58.471Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:16:58.471Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:17:12.894Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:17:12.894Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:17:12.895Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:17:12.894Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:17:12.896Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:17:12.903Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:17:12.904Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:17:12.905Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:17:12.907Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:17:12.915Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 8.6893ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 8.6893ms"}}
+[debug] [2023-11-27T09:17:12.917Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:17:12.918Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:17:12.918Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:17:12.918Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:17:12.921Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:17:12.920Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T09:17:12.921Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T09:17:12.920Z"],"workRunningCount":1}
+[debug] [2023-11-27T09:17:12.921Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T09:17:12.931Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T09:17:12.932Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T09:17:12.932Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T09:17:12.933Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T09:17:12.940Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 7.4934ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 7.4934ms"}}
+[debug] [2023-11-27T09:17:12.941Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T09:17:12.942Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T09:17:12.942Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T09:17:12.942Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:02:58.709Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:02:58.706Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:02:58.716Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:02:58.706Z"],"workRunningCount":1}
+[debug] [2023-11-27T10:02:58.717Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T10:02:58.784Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T10:02:58.786Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T10:02:58.788Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T10:02:58.791Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T10:02:58.819Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 28.8045ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 28.8045ms"}}
+[debug] [2023-11-27T10:02:58.821Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T10:02:58.821Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T10:02:58.822Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T10:02:58.822Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:02:58.827Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:02:58.826Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:02:58.827Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:02:58.826Z"],"workRunningCount":1}
+[debug] [2023-11-27T10:02:58.827Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T10:02:58.834Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T10:02:58.834Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T10:02:58.835Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T10:02:58.836Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: BUSY"}}
+[debug] [2023-11-27T10:02:58.845Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 9.1781ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 9.1781ms"}}
+[debug] [2023-11-27T10:02:58.846Z] [worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-432c789b-a40b-4b6c-a4bc-d647f83689b2]: IDLE"}}
+[debug] [2023-11-27T10:02:58.847Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T10:02:58.847Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T10:02:58.848Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:26:13.563Z] ----------------------------------------------------------------------
+[debug] [2023-11-27T10:26:13.565Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cupheni.ngcobo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-11-27T10:26:13.565Z] CLI Version:   12.9.1
+[debug] [2023-11-27T10:26:13.566Z] Platform:      win32
+[debug] [2023-11-27T10:26:13.566Z] Node Version:  v18.17.1
+[debug] [2023-11-27T10:26:13.570Z] Time:          Mon Nov 27 2023 12:26:13 GMT+0200 (South Africa Standard Time)
+[debug] [2023-11-27T10:26:13.570Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-27T10:26:13.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-27T10:26:13.684Z] > authorizing via signed-in user (ngcobolungile94@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-11-27T10:26:13.692Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2023-11-27T10:26:13.694Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-tutorial-56240. This may result in unexpected behavior. 
+[debug] [2023-11-27T10:26:13.720Z] [hub] writing locator at C:\Users\cupheni.ngcobo\AppData\Local\Temp\hub-clone-tutorial-56240.json
+[debug] [2023-11-27T10:26:13.747Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-27T10:26:13.747Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-27T10:26:13.747Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-11-27T10:26:13.757Z] defaultcredentials: writing to file C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json
+[debug] [2023-11-27T10:26:13.772Z] Setting GAC to C:\Users\cupheni.ngcobo\AppData\Roaming\firebase\ngcobolungile94_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\cupheni.ngcobo\\AppData\\Roaming\\firebase\\ngcobolungile94_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-27T10:26:13.775Z] > refreshing access token with scopes: []
+[debug] [2023-11-27T10:26:13.777Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-27T10:26:13.778Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-27T10:26:14.183Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-27T10:26:14.184Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-27T10:26:14.240Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig [none]
+[debug] [2023-11-27T10:26:14.949Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig 200
+[debug] [2023-11-27T10:26:14.949Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-tutorial-56240/adminSdkConfig {"projectId":"clone-tutorial-56240","storageBucket":"clone-tutorial-56240.appspot.com","locationId":"us-central"}
+[debug] [2023-11-27T10:26:15.008Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-11-27T10:26:15.008Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-11-27T10:26:15.008Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\cupheni.ngcobo\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\cupheni.ngcobo\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-11-27T10:26:15.201Z] Web / API server started at 127.0.0.1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
+[debug] [2023-11-27T10:26:15.202Z] Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
+[info] i  functions: Watching "C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\" for Cloud Functions..."}}
+[debug] [2023-11-27T10:26:15.309Z] Validating nodejs source
+[debug] [2023-11-27T10:26:23.313Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-27T10:26:23.314Z] Building nodejs source
+[debug] [2023-11-27T10:26:23.314Z] Failed to find version of module node: reached end of search path C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-11-27T10:26:23.330Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api-2023-11-27T10:26:23.329Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:26:23.330Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api-2023-11-27T10:26:23.329Z"],"workRunningCount":1}
+[debug] [2023-11-27T10:26:23.333Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:26:23.336Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-27T10:26:23.347Z] Found firebase-functions binary at 'C:\Users\cupheni.ngcobo\Desktop\Projects\amazon-app-tutorial\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-11-27T10:26:23.500Z] Functions emulator received unknown request at path /favicon.ico
+[info] Serving at port 8446
+
+[debug] [2023-11-27T10:26:28.683Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4001/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-11-27T10:27:07.686Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api-2023-11-27T10:27:07.686Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:27:07.688Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api-2023-11-27T10:27:07.686Z"],"workRunningCount":1}
+[debug] [2023-11-27T10:27:07.688Z] Accepted request GET /clone-tutorial-56240/us-central1/api --> us-central1-api
+[debug] [2023-11-27T10:27:07.701Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T10:27:07.703Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api, mapping to path=/"}}
+[debug] [2023-11-27T10:27:07.755Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-11-27T10:27:07.758Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-11-27T10:27:25.531Z] [runtime-status] [5328] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-11-27T10:27:25.545Z] [runtime-status] [5328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T10:27:25.549Z] [runtime-status] [5328] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-11-27T10:27:25.560Z] [runtime-status] [5328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T10:27:27.702Z] [runtime-status] [5328] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-11-27T10:27:27.703Z] [runtime-status] [5328] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-11-27T10:27:27.714Z] [runtime-status] [5328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T10:27:27.733Z] [runtime-status] [5328] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-11-27T10:27:27.773Z] [runtime-status] [5328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-11-27T10:27:27.774Z] [runtime-status] [5328] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-11-27T10:27:29.571Z] [runtime-status] [5328] Functions runtime initialized. {"cwd":"C:\\Users\\cupheni.ngcobo\\Desktop\\Projects\\amazon-app-tutorial\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\cupheni.ngcobo\\\\Desktop\\\\Projects\\\\amazon-app-tutorial\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2023-11-27T10:27:29.571Z] [runtime-status] [5328] Listening to port: \\?\pipe\fire_emu_f6c7f1a45fdaee34 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5328] Listening to port: \\\\?\\pipe\\fire_emu_f6c7f1a45fdaee34"}}
+[debug] [2023-11-27T10:27:29.616Z] [worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE"}}
+[debug] [2023-11-27T10:27:29.617Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T10:27:29.618Z] [worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: BUSY"}}
+[debug] [2023-11-27T10:27:29.642Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 23.7039ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 23.7039ms"}}
+[debug] [2023-11-27T10:27:29.643Z] [worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE"}}
+[debug] [2023-11-27T10:27:29.644Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T10:27:29.644Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T10:27:29.645Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:28:28.911Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:28:28.910Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:28:28.911Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:28:28.910Z"],"workRunningCount":1}
+[debug] [2023-11-27T10:28:28.911Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T10:28:28.918Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T10:28:28.919Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T10:28:28.919Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T10:28:28.922Z] [worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: BUSY"}}
+[debug] [2023-11-27T10:28:28.940Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 18.9381ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 18.9381ms"}}
+[debug] [2023-11-27T10:28:28.943Z] [worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE"}}
+[debug] [2023-11-27T10:28:28.944Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T10:28:28.944Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T10:28:28.944Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:28:28.949Z] [work-queue] {"queuedWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:28:28.949Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-27T10:28:28.951Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-tutorial-56240/us-central1/api/status-2023-11-27T10:28:28.949Z"],"workRunningCount":1}
+[debug] [2023-11-27T10:28:28.951Z] Accepted request GET /clone-tutorial-56240/us-central1/api/status --> us-central1-api
+[debug] [2023-11-27T10:28:28.964Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-27T10:28:28.964Z] [functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-tutorial-56240/us-central1/api/status, mapping to path=/status"}}
+[debug] [2023-11-27T10:28:28.965Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-11-27T10:28:28.966Z] [worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: BUSY"}}
+[debug] [2023-11-27T10:28:28.972Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.4199ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.4199ms"}}
+[debug] [2023-11-27T10:28:28.973Z] [worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-46a15fcf-bceb-40e8-a23f-f75363c224f5]: IDLE"}}
+[debug] [2023-11-27T10:28:28.974Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-27T10:28:28.975Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-27T10:28:28.975Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
