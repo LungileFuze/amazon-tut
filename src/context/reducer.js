@@ -15,12 +15,6 @@ export const initialState = {
           ...state,
           basket: [...state.basket, action.item],
         };
-
-        case 'EMPTY_BASKET':
-          return {
-            ...state,
-            basket: []
-          }
     
         case "REMOVE_FROM_BASKET":
           const index = state.basket.findIndex(
@@ -46,6 +40,12 @@ export const initialState = {
           return {
             ...state,
             user: action.user
+          }
+
+          case 'EMPTY_BASKET':
+          return {
+            ...state,
+            basket: []
           }
       default:
         return state;

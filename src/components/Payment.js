@@ -2,14 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useStateValue } from "../context/StateProvider";
 import { Link, useNavigate } from "react-router-dom";
 import CheckoutProduct from "./CheckoutProduct";
-import axios from "axios";
+import axios from "./axios";
 import { getBasketTotal } from "../context/reducer";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import "./Payment.css";
+import { db } from "./firebase";
 
 const Payment = () => {
   const [{ basket, user }, dispatch] = useStateValue();
+
+  const emptyBasket = () => {
+    dispatch({
+      type: "EMPTY_BASKET"
+    })
+  }
+
   const navigate = useNavigate()
 
   const stripe = useStripe()
@@ -19,37 +27,14 @@ const Payment = () => {
   const [processing, setProcessing] = useState("");
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
-  const [clientSecret, setClientSecret] = useState(true);
-
-
-  
-    const [serverStatus, setServerStatus] = useState('Unknown');
-  
-    useEffect(() => {
-      const checkServer = async () => {
-        try {
-          const response = await fetch('http://127.0.0.1:5001/clone-tutorial-56240/us-central1/api/status');
-          
-          if (response.ok) {
-            console.log(setServerStatus('Server is running!'));
-          } else {
-            console.log(setServerStatus('Server returned an error.'));
-          }
-        } catch (error) {
-          console.log(setServerStatus('Error connecting to server.'));
-        }
-      };
-  
-      checkServer();
-    }, []);
-
+  const [clientSecret, setClientSecret] = useState(" ");
 
   useEffect(() => {
     //customer
     const getClientSecret = async () => {
       const response = await axios({
         method: "post",
-        url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+        url: `/payments/create?total=${getBasketTotal(basket) * 100}`
       });
       setClientSecret(response.data.clientSecret);
     };
@@ -69,10 +54,22 @@ const Payment = () => {
     })
     .then(({ paymentIntent }) => {
       //Payment intent = payment confirmation
+      db.collection("user")
+      .doc(user?.id)
+      .collection("orders")
+      .doc(paymentIntent.id)
+      .set({
+        basket: basket,
+        amount: paymentIntent.amount,
+        create: paymentIntent.created,
+      })
       setSucceeded(true)
       setError(null)
       setProcessing(false)
-      navigate("/order")
+      //Empty basket
+      emptyBasket()
+      //Redirect the user to order page
+      navigate("/orders")
     })
   }
 
